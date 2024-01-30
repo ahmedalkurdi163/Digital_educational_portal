@@ -1,0 +1,255 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet" href="../css/Protfolio.css"> 
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="../script/script_curses_page.js"></script>
+</head> 
+
+<body> 
+    <!-- Start Header -->
+    <header>
+        <div class="container"> 
+            <a href="#" class="logo">
+                <img src="../images/teacher.jpeg" alt="Logo"> 
+            </a>
+            <nav>
+                <i class="fas fa-bars toggle-menu" id="mobileMenuButton" onclick="toggleMenu()"></i>
+                <ul class="main-menu" id="mainMenu">
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="#"  onclick="scrollToElement('services') " >Services</a></li>
+                    <li><a href="#" class="active">Protfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Digital educational portal course.html"  onclick="scrollToElement('course', event)">Courses</a></li>
+                    <li><a href="Digital educational portal login.html">Join Us</a></li>
+                    <li><a href="#" id="darkModeToggle" onclick="toggleDarkMode()">Change Mode </a></li>
+                </ul>
+                <!-- <button id="darkModeToggle" onclick="toggleDarkMode()"> -->
+                    <!-- <i class="fas fa-moon"></i> -->
+                <!-- </button> -->
+                <div class="form">
+                    <input type="text" id="searchInput">
+                    <i class="fas fa-search" id="searchIcon" onclick="clearSearchInput()"></i>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+	<!-- Main hero banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			<div class="headings"> 
+				<h3 class="greet-heading">Hello, We Are</h3> <br>
+				<h1 class="my-heading">Digital educational portal</h1> <br>
+				<h4 class="sub-heading"> <br>
+					Free courses website
+				</h4> 
+			</div> 
+		</div> 
+	</section> 
+	<!-- Portfolio Section -->
+	<section class="portfolio" id="portfolio"> 
+		<div class="portfolio-heading"> 
+			<h1 class="my-heading text-center">Featured Portfolio</h1> 
+		</div> 
+		<div class="portfolio-content"> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="../images/Prot-001.jpg"
+								alt="Web Design Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> Courses For Programming</h3> 
+						<p class="small-para blue-text">Programming</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="../images/Prot-002.jpg"
+								alt="Web Development Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Courses For Math 
+						</h3> 
+						<p class="small-para blue-text">Math</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="../images/Prot-003.png" alt="SEO Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text">Courses For English</h3> 
+						<p class="small-para blue-text">English</p> 
+					</div> 
+				</div> 
+			</div> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="../images/Prot-004.jpg"
+								alt="Content Writting Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Courses For Microsoft
+						</h3> 
+						<p class="small-para blue-text">Microsoft</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="../images/Prot-005.jpg"
+								alt="Wordpress Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							With the most advanced technology
+						</h3> 
+						<p class="small-para blue-text"> 
+							Technology 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="../images/Prot-006.jpg"
+								alt="Video Editing Image"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							With the best teachers
+						</h3> 
+						<p class="small-para blue-text">Teachers</p> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-text"> 
+			<h1 class="my-heading">About US</h1> <br>
+			<p class="lead-para"> 
+				The Digital Educational Portal is an online learning platform aimed at providing digital educational content.
+				 The website offers a diverse range of courses and educational programs in various fields, 
+				 allowing users to enhance their skills and expand their knowledge.
+				1. Diverse Courses: The platform provides a variety of educational courses covering areas such as programming, 
+				design, mathematics, and sciences. This enables users to choose from a wide range of topics and skills.
+				2. Flexible Learning Experience:** Users can access educational content at any time and from anywhere,
+				 providing them with the flexibility to organize their study schedules according to their personal needs.
+				3. Interaction and Support: Users can interact with the content through integrated social media platforms
+				 or dedicated course forums. This fosters a sense of community and allows learners to engage with instructors and peers.
+
+			</p> 
+			<p> 
+				Our exceptional mentors hailing from top 
+				colleges & organizations have the 
+				ability to guide you on a journey from 
+				the humble beginnings of coding to 
+				the pinnacle of expertise. Under their 
+				guidance watch your skills flourish 
+				as we lay the foundation and help you 
+				conquer the world of coding. 
+			</p> 
+		</div> 
+
+	</section> 
+	<!-- Contact us section -->
+	<section class="contact" id="contact"> 
+		<div class="contact-heading"> 
+			<br><br>
+			<h1 class="my-heading text-center">Contact US</h1> 
+		</div> 
+		<div class="contact-content"> 
+			<div class="contact-form-container"> 
+				<h1 class="greet-heading">Get In Touch</h1> 
+				<form class="contact-form"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Name"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Email"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Phone"> 
+					<textarea class="form-controls"
+							placeholder="Write your message"
+							name="message" id="" cols="30"
+							rows="10"> 
+					</textarea> 
+					<input class="form-btn btn common-btn"
+						type="submit" value="Send Message"> 
+				</form> 
+			</div> 
+			<div class="contact-details"> 
+				<h1 class="greet-heading">Our Contact Details</h1> 
+				<div class="details"> 
+					<h5 class="contact-heading">EMAIL</h5> 
+					<p class="contact-text">depwebsite@gmail.com</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">PHONE</h5> 
+					<p class="contact-text">+963 55676893</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">FAX</h5> 
+					<p class="contact-text">+963 55673213</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">ADDRESS</h5> 
+					<p class="contact-text">Syrea /Allepo , Azaz</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- Footer section -->
+	<footer class="footer"> 
+		<div class="footer-content text-center"> 
+			<h4> 
+				Copyright © 2023 All rights reserved | 
+				This portfolio website template is created 
+				by GeeksforGeeks. 
+			</h4> 
+			<div class="social-links"> 
+				<div class="footer-menu"> 
+					<ul class="footer-menu-list"> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="#"> 
+								<i class="fab fa-facebook-f"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="#"> 
+								<i class="fab fa-twitter"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="#"> 
+								<i class="fab fa-instagram"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="#"> 
+								<i class="fab fa-linkedin-in"></i> 
+							</a> 
+						</li> 
+					</ul> 
+				</div> 
+			</div> 
+		</div> 
+	</footer> 
+
+
+</body> 
+
+</html>

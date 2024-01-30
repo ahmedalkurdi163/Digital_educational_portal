@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-family: "OpenSans-BoldItalic";
+    src: url(../fonts/OpenSans-BoldItalic.ttf);
+    font-family: "OpenSans-BoldItalic.";
+    src: url(../fonts/OpenSans-BoldItalic.ttf);
+    font-family: "OpenSans-ExtraBold";
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url(../fonts/OpenSans-ExtraBoldItalic.ttf);
+    font-family: "OpenSans-Italic";
+    src: url(../fonts/OpenSans-Italic.ttf);
+    font-family: "OpenSans-Light";
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-family: "OpenSans-LightItalic";
+    src: url(../fonts/OpenSans-LightItalic.ttf);
+    font-family: "OpenSans-Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: "OpenSans-Semibold";
+    src: url(../fonts/OpenSans-Semibold.ttf);
+    font-family: "OpenSans-SemiboldItalic";
+    src: url(../fonts/OpenSans-SemiboldItalic.ttf);
+}
+/* Start Variables  */
+:root{
+    --main-color : #19c8fa;
+    --transparent-color : rgb(15 116 143 /30%); 
+    --section-padding : 100px;
+    --services-color-paragraph : var(--services-color-paragraph);
+    --secondary-color :#2c4755;
+    --section-padding : 60px;
+    --section-background : #f6f6f6;
+    --parpgraph-color : #777;
+}
+/* End Variables  */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: "OpenSans" ,sans-serif;
+    background-color: #FBFCFF;
+    padding: 0%;
+    margin: 0%;
+}
+ul{
+    list-style: none;
+}
+.container{
+   
+    margin-left: auto ;
+    margin-right: auto;
+}
+@media(min-width:768px){
+    .container{
+        width: 767px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+} 
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Components */
+.section{
+    padding: 100px;
+}
+.main-heading{
+    text-align: center;
+   
+}
+.main-heading h2{
+    padding-top: 100px;
+    font-weight: bold ;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase ;
+}
+
+.main-heading p{
+    padding-bottom: 30px;
+    width: 550px;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    line-height: 2;
+    color: var(--services-color-paragraph);
+}
+.main-heading h2::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 120px;
+    background-color: #333;
+    bottom: -80px;
+    
+    
+}
+.main-heading h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -87px;
+    background-color: white ;
+    
+}
+/* End Components */
+/* Start Header */
+header{
+   
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}   
+header .container{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+    width: 100%;
+}
+header .container::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgb(250, 214, 165);
+    bottom: 0;
+    width: 94%;
+    
+}
+header .logo img{
+    /* padding-left: 30px; */
+    height: 40px;
+}
+header nav{
+    padding-right: 30px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav .toggle-menu{
+    color: rgb(250, 214, 165);
+    font-size: 30px;
+}
+@media(min-width:768px){
+    header nav .toggle-menu{
+        display: none;
+    }
+   
+}
+header nav .main-menu {
+    display: flex;
+}
+header nav ul li {
+    justify-content: space-between;
+}
+@media(max-width:767px){
+    header nav .main-menu {
+        display: none ;
+    }
+    header nav .toggle-menu:hover + .main-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top :100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0 0 0 /50%);
+    }
+    header nav .toggle-menu:hover + ul li a{
+        padding: 15px;
+    }
+}
+
+header nav ul li a{
+    
+    align-items: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;    
+    transition: 0.3s;
+    padding: 25px;
+}
+header nav ul li a.active,
+header nav ul li a:hover{
+    transition: 1s;
+    color: rgb(250, 214, 165);
+    border-bottom: 1px double rgba(250, 214, 165,0.1);
+    border-top: 1px double rgba(250, 214, 165,0.1);
+    border-radius:300px;
+    position: relative;
+    z-index: 2;
+}
+header nav .form input[type="text"]{
+    width: 240px;
+    height: 30px;
+    background-color: initial;
+    color: #ddd;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px; 
+    position: relative;
+    margin-left: 0px;
+    border: 3px double rgba(250, 214, 165,0.1);
+    border-radius: 150px;
+}
+header nav .form i{
+    color: #FBFCFF;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+    right:10px;
+}
+@media(max-width:767px){
+    header nav .form ,
+    header nav .form i{
+        display: none;
+    }
+
+}
+/* End Header */
+/* Start Design */
+.design{
+    padding-top:  100px;
+    padding-bottom: 100px;
+    height: 600px;
+    position: relative;
+    background-image: url(../images/alkay_003.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.design::before{
+    position: absolute;
+    left: 0;
+    top : 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 /60%);
+}
+.design .text,
+.design .image{
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+.design .image{
+    text-align: center;
+}
+@media(max-width:767px){
+    .design .image{
+        display: none;
+    }
+}
+.design .image img{
+    position: relative;
+    border-radius: 7%;
+    bottom: -190px;
+}
+.design .text {
+    color: white;
+    padding: 50px;
+    background-color: rgb(15 116 143 /30%); 
+}
+.design .text h2{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.design .text ul li{
+    padding: 15px 0;
+}
+.design .text ul li::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f108';
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}   
+@media(max-width:767px){
+    .design .text h2{
+        font-size: 20px;
+    }
+}
+/* End Design */

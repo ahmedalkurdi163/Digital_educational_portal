@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Digital educational portal login.css">
+  <script src="../script/script_curses_page.js"></script>
+  <title>Digital educational portal login</title>
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return loginUser()">
+      <label for="loginUsername">Username:</label>
+      <input type="text" id="loginUsername" name="loginUsername" required>
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="loginPassword" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="switch">
+      <p>Don't have an account? <a href="#" onclick="toggleForms('signupForm')">Sign up</a></p>
+    </div>
+  </div>
+
+  <div class="container" style="display:none;" id="signupContainer">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <label for="signupUsername">Username:</label>
+      <input type="text" id="signupUsername" name="signupUsername" required>
+
+      <label for="signupEmail">Email:</label>
+      <input type="email" id="signupEmail" name="signupEmail" required>
+
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" name="signupPassword" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="switch">
+      <p>Already have an account? <a href="#" onclick="toggleForms('loginForm')">Login</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
